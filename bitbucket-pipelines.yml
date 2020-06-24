@@ -1,0 +1,6 @@
+image: gossin/iikos-ci:latest
+pipelines:
+  default:
+    - step:
+        script:
+          - pwsh -Command 'Invoke-ScriptAnalyzer -EnableExit *.ps1'
